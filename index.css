@@ -1,0 +1,67 @@
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex
+
+}
+
+/* .search {
+  margin-left: auto;
+} */
+
+/* by deafult, order = 0. 
+.search {
+  order: -1; search becomes the first item;
+} */
+
+
+
+/* flex: 1 1 0 means flex-grow: 1, flex-shrink: 1, flex-basis: 0; */
+/* flex-basis: 200px; set the base width to 200px regardless of page size; */
+/* flex-grow: 1; selected contents grow with the size of the container. 0 doesn't. 0 by default,*/
+/* flex-shrink: 1; shows the rate at which content size should shrink. 1 by default; */
+/* flex: 1; set everything to 1 */
+
+/* flex-wrap: wrap; for wrapping contents */
+
+/* .container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+} */
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container > div:nth-child(1) {
+  background-color: #96ceb4;
+}
+
+.container > div:nth-child(2) {
+  background-color: #ff6f69;
+}
+
+.container > div:nth-child(3) {
+  background-color: #88d8b0;
+}
+
+/* can set flex direction to organize content
+flex-direction: column;
+
+We may need to set height = 100%; */
+
+/* Let the container take up the whole row */
+/* .container {
+  flex: 1;
+} */
+
+/* Let the search take up two times space as the others.
+.container > .search {
+  flex: 2
+}
+We can do it for the search class as well. */
+
+/* align-items: center;
+justify-content: center; // for centering contents */
